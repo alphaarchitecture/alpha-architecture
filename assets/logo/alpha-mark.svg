@@ -1,0 +1,23 @@
+<svg width="240" height="300" viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="alphaMarkTitle">
+  <title id="alphaMarkTitle">Alpha Architecture — symbole</title>
+  <!-- Grue -->
+  <g stroke="#141312" stroke-width="4" stroke-linecap="square" fill="none">
+    <line x1="120" y1="92" x2="120" y2="18"/>
+    <line x1="120" y1="20" x2="212" y2="10"/>
+    <line x1="120" y1="24" x2="58" y2="30"/>
+    <line x1="188" y1="13" x2="188" y2="54"/>
+  </g>
+  <rect x="52" y="26" width="10" height="10" fill="#141312"/>
+  <path d="M188 54 l-6 8 h12 z" fill="#141312"/>
+  <!-- Lettre A triangulaire (bloc) -->
+  <g stroke="#141312" stroke-width="26" stroke-linecap="square" stroke-linejoin="miter" fill="none">
+    <line x1="120" y1="90" x2="34" y2="222"/>
+    <line x1="120" y1="90" x2="206" y2="222"/>
+    <line x1="76" y1="152" x2="164" y2="152"/>
+  </g>
+  <!-- Tour rouge -->
+  <rect x="108" y="150" width="24" height="72" fill="#B11226"/>
+  <rect x="115" y="163" width="10" height="8" fill="#FAF8F4"/>
+  <rect x="115" y="180" width="10" height="8" fill="#FAF8F4"/>
+  <rect x="115" y="197" width="10" height="8" fill="#FAF8F4"/>
+</svg>

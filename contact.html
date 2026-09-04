@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Alpha Architecture</title>
+<meta name="description" content="Contactez Alpha Architecture pour échanger sur votre projet d'architecture, de réhabilitation ou de transformation.">
+<link rel="icon" type="image/png" href="assets/logo/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/logo/favicon-180.png">
+<link rel="canonical" href="https://alphaarchitecture.fr/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Alpha Architecture">
+<meta property="og:description" content="Contactez Alpha Architecture pour échanger sur votre projet.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="visually-hidden" href="#main">Aller au contenu</a>
+
+<header class="site-header on-dark" data-header>
+  <a class="brand" href="index.html">
+    <img class="brand-mark brand-mark-black" src="assets/logo/alpha-mark-black.png" alt="">
+    <img class="brand-mark brand-mark-white" src="assets/logo/alpha-mark-white.png" alt="">
+    <span class="brand-text">ALPHA<span>ARCHITECTURE</span></span>
+  </a>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-primary" aria-label="Navigation principale">
+    <a href="projets.html">PROJETS</a>
+    <a href="agence.html">AGENCE</a>
+    <a href="contact.html" aria-current="page">CONTACT</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="section-on-dark" style="min-height:100svh; padding-top:9.5rem;">
+    <div class="container">
+
+      <div class="reveal" style="margin-bottom:4rem;">
+        <span class="type-label" style="color:rgba(255,255,255,.55);">CONTACT</span>
+        <h1 class="type-h1" style="margin-top:1rem; color:#fff;">Nous écrire</h1>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="reveal">
+          <h2 class="type-h3" style="color:#fff;">ALPHA ARCHITECTURE</h2>
+          <ul class="contact-list">
+            <li><a href="mailto:contact@alpha-architecture.fr">contact@alpha-architecture.fr</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="reveal">
+          <!--
+            Formulaire prêt à être connecté gratuitement à Formspree :
+            1) créer un formulaire sur https://formspree.io
+            2) remplacer action="#" ci-dessous par action="https://formspree.io/f/VOTRE_ID"
+            Voir aussi js/main.js.
+          -->
+          <form class="form" action="#" method="POST">
+            <div class="field">
+              <label for="nom">Nom</label>
+              <input id="nom" name="nom" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="telephone">Téléphone</label>
+              <input id="telephone" name="telephone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="lieu">Lieu du projet</label>
+              <input id="lieu" name="lieu" type="text">
+            </div>
+            <div class="field">
+              <label for="type">Type de projet</label>
+              <select id="type" name="type">
+                <option value="">Sélectionner</option>
+                <option value="construction">Construction neuve</option>
+                <option value="renovation">Réhabilitation</option>
+                <option value="extension">Extension / transformation</option>
+                <option value="interieur">Architecture intérieure</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="budget">Budget indicatif</label>
+              <input id="budget" name="budget" type="text" placeholder="Ex. 150 000 €">
+            </div>
+            <div class="field full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button class="btn" type="submit">Envoyer</button>
+            <p class="form-note type-label" style="grid-column:1/-1; color:rgba(255,255,255,.55);"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img class="brand-mark" src="assets/logo/alpha-mark-white.png" alt="">
+          ALPHA ARCHITECTURE
+        </div>
+        <ul class="contact-list" style="margin-top:1.2rem;">
+          <li style="border-top:none;"><a href="mailto:contact@alpha-architecture.fr">contact@alpha-architecture.fr</a></li>
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <nav class="footer-nav" aria-label="Navigation pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Projets</a>
+        <a href="agence.html">Agence</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Alpha Architecture</span>
+      <span>Maîtrise d'œuvre — Architecture — Réhabilitation</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
