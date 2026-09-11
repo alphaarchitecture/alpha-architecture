@@ -49,6 +49,28 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => el.classList.add('is-visible'));
   }
 
+  /* ---------- Filtres de la page Projets ---------- */
+  const filterBar = document.querySelector('.projects-filters');
+  if (filterBar) {
+    const buttons = filterBar.querySelectorAll('.filter-btn');
+    const tiles = document.querySelectorAll('.project-tile');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => {
+          b.classList.remove('is-active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-pressed', 'true');
+        const filter = btn.dataset.filter;
+        tiles.forEach(tile => {
+          const match = filter === 'all' || tile.dataset.category === filter;
+          tile.style.display = match ? '' : 'none';
+        });
+      });
+    });
+  }
+
   /* ---------- Formulaire de contact ----------
      Prêt à être relié gratuitement à Formspree (https://formspree.io) :
      remplacer l'attribut action="#" par action="https://formspree.io/f/VOTRE_ID"
